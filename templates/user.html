@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head %}
+{{ super() }}
+<sytle>
+</sytle>
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+
+<h1>
+	This is Time Page
+</h1>
+
+<hr>
+<a href="/">Move To Home Page</a>
+<hr>
+
+<h3>
+	{% if username %} Hello, {{username}} {% else %} Hello, Stranger! {% endif%}
+</h3>
+
+{% endblock %}

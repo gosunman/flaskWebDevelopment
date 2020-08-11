@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head %}
+{{ super() }}
+<sytle>
+</sytle>
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+
+<h1>
+	This is Home Page
+</h1>
+
+<hr>
+<a href="/time">Move To Time Page</a>
+<hr>
+<a href="/user/Sunman">Move To User Page</a>
+<hr>
+<a href="/survey">Move To Survey Page</a>
+<hr>
+
+<div class="page-header">
+	<h1>
+		It's a Home Page
+	</h1>
+</div>
+
+{% endblock %}
